@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sociedade, Diálogo e Conflitos</title>
+    <link rel="icon" href="geografia.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Sociedade, Diálogo e Conflitos</h1>
+        <nav>
+            <button onclick="mostrarPagina('pagina1')">Pobreza Extrema</button>
+            <button onclick="mostrarPagina('pagina2')">IDH e Desenvolvimento</button>
+            <button onclick="mostrarPagina('pagina3')">Conflitos Sociais e Diálogo</button> <!-- Botão novo -->
+        </nav>
+    </header>
+
+    <a href="../index.html" class="btn-voltar">Voltar</a>
+
+    <main>
+        <section id="pagina1" class="pagina">
+            <h2>Pobreza Extrema no Brasil nos Últimos 20 Anos</h2>
+            <img src="https://static.todamateria.com.br/upload/po/br/pobrezanobrasilcc-0.jpg" alt="Pobreza no Brasil">
+            <p>No início dos anos 2000, a pobreza extrema no Brasil atingia proporções alarmantes, com mais de 20% da população vivendo com menos de R$140 mensais. A desigualdade social era imensa, dificultando o acesso a serviços básicos.</p>
+
+            <h3>Avanços Durante o Governo Lula</h3>
+            <p>De 2003 a 2010, políticas como o Bolsa Família ajudaram milhões de brasileiros, com redução significativa da pobreza extrema e crescimento econômico.</p>
+
+            <h3>Desafios da Década de 2010</h3>
+            <p>Apesar dos avanços, a crise econômica de 2014, o desemprego e a redução de investimentos sociais aumentaram novamente a extrema pobreza.</p>
+
+            <h3>Impacto da Pandemia de COVID-19</h3>
+            <p>A pandemia agravou a situação, mas políticas emergenciais e programas sociais conseguiram reduzir novamente os índices em 2023.</p>
+
+            <h3>Dados Recentes</h3>
+            <ul>
+                <li>2022: 5,9% da população em extrema pobreza</li>
+                <li>2023: 4,4% da população em extrema pobreza</li>
+            </ul>
+        </section>
+
+        <section id="pagina2" class="pagina" style="display:none;">
+            <h2>Índice de Desenvolvimento Humano (IDH) e Características Sociais Globais</h2>
+            <img src="https://www.tudogeo.com.br/wp-content/uploads/2020/12/Mapa-IDH-2019-1.png" alt="Mapa Mundial IDH">
+            <p>O IDH é um indicador criado em 1990 para medir o desenvolvimento de um país através da renda, educação e saúde.</p>
+
+            <h3>Importância do IDH</h3>
+            <p>O IDH permite comparar o grau de desenvolvimento entre diferentes países, auxiliando em estudos sociais e políticas públicas.</p>
+
+            <h3>Fatores que Influenciam o IDH</h3>
+            <ul>
+                <li>Estabilidade Política</li>
+                <li>Investimento em Saúde e Educação</li>
+                <li>Desigualdade Social</li>
+                <li>Conflitos e Desastres Naturais</li>
+            </ul>
+
+            <h3>Classificação do IDH</h3>
+            <ul>
+                <li>Baixo: 0 a 0,554</li>
+                <li>Médio: 0,555 a 0,699</li>
+                <li>Alto: 0,700 a 0,799</li>
+                <li>Muito Alto: 0,800 a 1</li>
+            </ul>
+
+            <p>Em 2023, o Brasil ocupa a 89ª posição global, com IDH de 0,761 (desenvolvimento "alto").</p>
+        </section>
+        <section id="pagina3" class="pagina" style="display:none;">
+            <h2>Conflitos Sociais e a Importância do Diálogo</h2>
+            <img src="https://ogimg.infoglobo.com.br/in/25050211-def-8bf/FT1086A/760/93217432_TOPSHOTColombian-police-officers-arrest-a-demonstrator-during-a-protest-against-the-gove.jpg">
+            
+            <h3>Conflitos Sociais</h3>
+            <p>Conflitos sociais surgem a partir de desigualdades econômicas, culturais, políticas ou de acesso a direitos fundamentais. Eles podem se manifestar em movimentos sociais, protestos ou tensões entre diferentes grupos.</p>
+
+            <h3>Importância do Diálogo</h3>
+            <p>O diálogo é fundamental para a mediação de conflitos, promovendo o entendimento mútuo, o respeito às diferenças e a construção de soluções pacíficas. O processo de escuta ativa e negociação é essencial para alcançar consenso e estabilidade social.</p>
+
+            <h3>Vídeo: Mediação de Conflitos Sociais</h3>
+            <iframe width="560" height="315" src="trabalho geografia.mp4" title="Palestra sobre Mediação de Conflitos" frameborder="0" allowfullscreen></iframe>
+
+            <section>
+                <h3>Podcast</h3>
+                <audio controls>
+                  <source src="podcastgeografia.mp3" type="audio/mpeg">
+                  Seu navegador não suporta áudio.
+                </audio>
+        </section>
+
+    </main>
+
+    <footer>
+        Feito por João Vitor Gerim Damiani
+    </footer>
+
+    <script>
+        function mostrarPagina(pagina) {
+            const paginas = document.querySelectorAll('.pagina');
+            paginas.forEach(p => p.style.display = 'none');
+            document.getElementById(pagina).style.display = 'block';
+        }
+    </script>
+
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
+</body>
+</html>

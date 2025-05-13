@@ -1,0 +1,137 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 20px;
+  }
+  
+  /* Cabeçalho */
+  header {
+    background-color: #004d7a;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 30px;
+  }
+  
+  header h1 {
+    font-size: 2em;
+  }
+  
+  /* Seções principais */
+  main section {
+    background-color: #ffffff;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  }
+  
+  h2 {
+    color: #004d7a;
+    margin-bottom: 15px;
+  }
+  
+  h3 {
+    color: #006494;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+  
+  li {
+    margin-bottom: 8px;
+  }
+  
+  /* Áudio */
+  audio {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo dos detalhes (respostas) */
+  details {
+    background-color: #eef6f9;
+    border-left: 4px solid #0096c7;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-radius: 6px;
+  }
+  
+  details summary {
+    font-weight: bold;
+    cursor: pointer;
+    color: #0077b6;
+    margin-bottom: 8px;
+  }
+  
+  /* Espaçamento entre exercícios */
+  .vazio {
+    margin-bottom: 40px;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    body {
+      padding: 10px;
+    }
+  
+    header h1 {
+      font-size: 1.5em;
+    }
+
+  }
+    img {
+    width: 220px;
+    height: 250px;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+/* Efeito de zoom ao passar o mouse */
+    img:hover {
+    transform: scale(1.05);
+}
+
+hr {
+    border: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+
+.btn-voltar {
+  display: inline-block;
+  background-color: #014267;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.btn-voltar:hover {
+  background-color: #02304b;
+  transform: translateY(-1px);
+}
